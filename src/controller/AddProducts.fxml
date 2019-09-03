@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500" prefWidth="800" xmlns="http://javafx.com/javafx/8.0.121" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddProducts">
+    <children>
+        <TableView fx:id="addProducts" layoutX="345" layoutY="65" prefHeight="150" prefWidth="400">
+            <columns>
+                <TableColumn fx:id="addProductsAddIDColumn" prefWidth="100" text="ID" />
+                <TableColumn fx:id="addProductsAddNameColumn" prefWidth="100" text="Name" />
+                <TableColumn fx:id="addProductsAddInvColumn" prefWidth="100" text="Inv." />
+                <TableColumn fx:id="addProductsAddPriceColumn" prefWidth="100" text="Price" />
+            </columns>
+        </TableView>
+        <TableView fx:id="deleteProducts" layoutX="345" layoutY="270" prefHeight="150" prefWidth="400">
+            <columns>
+                <TableColumn fx:id="deleteProductsIDColumn" prefWidth="100" text="ID" />
+                <TableColumn fx:id="deleteProductsNameColumn" prefWidth="100" text="Name" />
+                <TableColumn fx:id="deleteProductsInvColumn" prefWidth="100" text="Inv." />
+                <TableColumn fx:id="deleteProductsPriceColumn" prefWidth="100" text="Price" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblAddProductsScreen" layoutX="40" layoutY="30" text="Add Product">
+            <font>
+                <Font name="System Bold" size="15" />
+            </font>
+        </Label>
+        <Button fx:id="btnAddProductsSearch" layoutX="620" layoutY="30" mnemonicParsing="false" onAction="#handleSearch" prefHeight="25" prefWidth="60" text="Search" />
+        <TextField fx:id="txtAddProductsSearch" layoutX="470" layoutY="30" prefHeight="25" prefWidth="140" />
+        <Button fx:id="btnAddProductsAdd" layoutX="690" layoutY="220" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25" prefWidth="60" text="Add" />
+        <Button fx:id="btnAddProductsDelete" layoutX="690" layoutY="425" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25" prefWidth="60" text="Delete" />
+        <Button fx:id="btnAddProductsCancel" layoutX="690" layoutY="460" mnemonicParsing="false" onAction="#handleAddProductsCancel" prefHeight="25" prefWidth="60" text="Cancel" />
+        <Button fx:id="btnAddProductsSave" layoutX="620" layoutY="460" mnemonicParsing="false" onAction="#handleAddProductsSave" prefHeight="25" prefWidth="60" text="Save" />
+        <Label fx:id="lblAddProductsID" layoutX="20" layoutY="120" text="ID">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <Label fx:id="lblAddProductsIDNumber" alignment="CENTER" layoutX="80" layoutY="110" prefHeight="40" prefWidth="150" style="-fx-border-width: 1; -fx-border-color: black; -fx-border-style: solid; -fx-padding: 5;" text="Auto Gen - Disabled">
+            <font>
+                <Font name="System Italic" size="13" />
+            </font>
+        </Label>
+        <Label fx:id="lblAddProductsName" layoutX="20" layoutY="170" text="Name">
+            <font>
+                <Font size="13" />
+            </font></Label>
+        <TextField fx:id="txtAddProductsName" layoutX="80" layoutY="160" prefHeight="40" prefWidth="150" promptText="Product Name">
+            <font>
+                <Font name="System Italic" size="13" />
+            </font></TextField>
+        <Label fx:id="lblAddProductsInv" layoutX="20" layoutY="225" text="Inv">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddProductsInv" layoutX="80" layoutY="215" prefHeight="40" prefWidth="150" promptText="Inv">
+            <font>
+                <Font name="System Italic" size="13" />
+            </font>
+        </TextField>
+        <Label fx:id="lblAddProductsPrice" layoutX="20" layoutY="280" text="Price">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddProductsPrice" layoutX="80" layoutY="270" prefHeight="40" prefWidth="150" promptText="Price">
+            <font>
+                <Font name="System Italic" size="13" />
+            </font></TextField>
+        <Label fx:id="lblAddProductsMax" layoutX="20.0" layoutY="330.0" text="Max">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddProductsMax" layoutX="77.0" layoutY="320.0" prefHeight="40.0" prefWidth="100.0" promptText="Max">
+            <font>
+                <Font name="System Italic" size="13" />
+            </font>
+        </TextField>
+        <Label fx:id="lblAddProductsMin" layoutX="187.0" layoutY="330.0" text="Min">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddProductsMin" layoutX="226.0" layoutY="320.0" prefHeight="40.0" prefWidth="100.0" promptText="Min">
+            <font>
+                <Font name="System Italic" size="13" />
+            </font></TextField>
+        <Button fx:id="btnAddProductsClear" layoutX="690" layoutY="30" mnemonicParsing="false" onAction="#handleClearSearch" prefHeight="25" prefWidth="60" text="Clear" />
+    </children>
+</AnchorPane>

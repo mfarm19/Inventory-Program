@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450" prefWidth="450" xmlns="http://javafx.com/javafx/8.0.121" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddParts">
+    <children>
+        <Label fx:id="lblAddPartsScreen" layoutX="15" layoutY="15" text="Add Part">
+            <font>
+                <Font name="System Bold" size="20" />
+            </font>
+        </Label>
+        <RadioButton fx:id="radioAddPartsInHouse" layoutX="140" layoutY="20" mnemonicParsing="false" onAction="#addPartsInHouseRadio" selected="true" text="In House" />
+        <RadioButton fx:id="radioAddPartsOutsource" layoutX="240" layoutY="20" mnemonicParsing="false" onAction="#addPartsOutsourceRadio" text="Outsourced" />
+        <Label fx:id="lblAddPartsID" layoutX="35" layoutY="70" text="ID">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <Label fx:id="lblAddPartsIDNumber" alignment="CENTER" layoutX="140" layoutY="60" prefHeight="40" prefWidth="150" 
+               style="-fx-border-width: 1; -fx-border-color: black; -fx-border-style: solid; -fx-padding: 5;" text="Auto Gen - Disabled">
+            <font>
+                <Font name="System Italic" size="15" />
+            </font>
+        </Label>
+        <Label fx:id="lblAddPartsName" layoutX="35" layoutY="120" text="Name">
+            <font>
+                <Font size="13" />
+            </font></Label>
+        <TextField fx:id="txtAddPartsName" layoutX="140" layoutY="110" prefHeight="40" prefWidth="150" promptText="Part Name">
+            <font>
+                <Font name="System Italic" size="15" />
+            </font></TextField>
+        <Label fx:id="lblAddPartsInv" layoutX="35" layoutY="177" text="Inv">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsInv" layoutX="140" layoutY="170" prefHeight="40" prefWidth="150" promptText="Inv">
+            <font>
+                <Font name="System Italic" size="15" />
+            </font>
+        </TextField>
+        <Label fx:id="lblAddPartsPrice" layoutX="35" layoutY="230" text="Price/Cost">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsPrice" layoutX="140" layoutY="220" prefHeight="40" prefWidth="150" promptText="Price/Cost">
+            <font>
+                <Font name="System Italic" size="15" />
+            </font></TextField>
+        <Label fx:id="lblAddPartsMax" layoutX="35" layoutY="290" text="Max">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsMax" layoutX="140" layoutY="280" prefHeight="40" prefWidth="100" promptText="Max">
+            <font>
+                <Font name="System Italic" size="15" />
+            </font>
+        </TextField>
+        <Label fx:id="lblAddPartsMin" layoutX="260" layoutY="290" text="Min">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsMin" layoutX="300" layoutY="280" prefHeight="40" prefWidth="100" promptText="Min">
+            <font>
+                <Font name="System Italic" size="15" />
+            </font></TextField>
+        <Label fx:id="lblAddPartsDyn" layoutX="35" layoutY="340" text="Machine ID">
+            <font>
+                <Font size="13" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsDyn" layoutX="140" layoutY="330" prefHeight="40" prefWidth="150" promptText="Machine ID">
+            <font>
+                <Font name="System Italic" size="15" />
+            </font>
+        </TextField>
+        <Button fx:id="btrnAddPartsSave" layoutX="260" layoutY="400" mnemonicParsing="false" onAction="#handleAddPartsSave" prefHeight="25" prefWidth="60" text="Save" />
+        <Button fx:id="btnAddPartsCancel" layoutX="340" layoutY="400" mnemonicParsing="false" onAction="#handleAddPartsCancel" prefHeight="25" prefWidth="60" text="Cancel" />
+    </children>
+</AnchorPane>
